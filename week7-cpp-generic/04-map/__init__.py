@@ -17,7 +17,7 @@ def compiles():
 def validate(sources_buf):
     if "std::vector" in sources_buf:
         raise check50.Failure("There should be no vector objects in the code")
-    if re.search("dot.*std::map.*std::map", sources_buf):
+    if not re.search("int dot.*std::map.*std::map.*", sources_buf):
         raise check50.Failure("dot should take std::map arguments")
 
 @check50.check(compiles)
