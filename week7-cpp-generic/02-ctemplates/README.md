@@ -1,6 +1,6 @@
 The program [ctemplates.cpp](ctemplates.cpp) solves the previous exercise.
 A single templated `add_and_print` function handles all types of arguments.
-But the definition of `Complex` is unsatisfactory. using int for the real and
+But the definition of `Complex` is unsatisfactory. Using int for the real and
 imaginary parts is convenient and fast, but limiting. In the main function
 provided, using int for c3 and c4 leads to loss of precision. Adding the two
 numbers together produces the wrong result.
