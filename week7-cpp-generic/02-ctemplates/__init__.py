@@ -15,7 +15,7 @@ def compiles():
 
 @check50.check(exists)
 def validate(sources_buf):
-    if not re.search("template\s+\<typename\ \S+>\s+class Complex"):
+    if not re.search("template\s+\<typename\ \S+>\s+class Complex", sources_buf):
         raise check50.Failure("No templated Complex found!")
 
 @check50.check(compiles)
