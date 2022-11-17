@@ -11,7 +11,7 @@ def exists():
 
 @check50.check(exists)
 def compiles():
-    check50.c.compile("inheritance.cpp", exe_name="inheritance", cc="g++")
+    check50.c.compile("inheritance.cpp", exe_name="inheritance", cc="g++", ggdb=True, lm=True, std='c++17')
 
 @check50.check(exists)
 def validate(sources_buf):
