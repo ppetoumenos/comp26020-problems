@@ -56,8 +56,8 @@ encapsulation and rewrite this program to implement:
 The expected output is:
 ```shell
 ./encapsulation
-Rectangle l: 10.000000, w: 20.000000, perimeter: 60.000000
-Circle r: 1.000000, circumference: 6.280000
+Rectangle l: 10, w: 20, perimeter: 60
+Circle r: 1, circumference: 6.28
 ```
 
 To check the correctness of your program, use the department VM image with check50 installed or alternatively CS50 [sandbox](sandbox.cs50.io)

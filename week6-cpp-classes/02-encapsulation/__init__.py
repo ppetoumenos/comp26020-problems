@@ -41,7 +41,7 @@ def validate(sources_buf):
 @check50.check(compiles)
 def output_correct():
     check50.run("./encapsulation")\
-            .stdout("Rectangle l: 10\.0+, w: 20\.0+, perimeter: 60\.0+")\
-            .stdout("Circle r: 1\.0+, circumference: 6\.280+")\
+            .stdout("Rectangle l: 10+, w: 20+, perimeter: 60+")\
+            .stdout("Circle r: 1+, circumference: 6\.28+")\
             .exit()
 
