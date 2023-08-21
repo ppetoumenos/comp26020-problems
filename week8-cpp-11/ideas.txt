@@ -1,0 +1,8 @@
+1. Rewrite code as combination of algorithms
+2. Rewrite code as combination of algorithms
+3. Rewrite the same code as a combination of view algorithms
+4. Previous class, add move constructor
+5. Vector of unique_ptr
+6. Rewrite earlier function template as an auto-using template
+7. Function returning success flag and result. Hint at optional
+8. Fix C++ Coreguideline errors in one of the previous solutions

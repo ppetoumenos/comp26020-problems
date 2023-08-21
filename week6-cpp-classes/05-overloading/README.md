@@ -51,7 +51,7 @@ several types as parameters. The expected output is:
 ./overloading
 (4+5i) + (9+11i) = (13+16i)
 4 + 9 = 13
-5.800000 + 11.200000 = 17.000000
+5.8 + 11.2 = 17
 ```
 
 To check the correctness of your program, use the department VM image with check50 installed or alternatively CS50 [sandbox](sandbox.cs50.io)
