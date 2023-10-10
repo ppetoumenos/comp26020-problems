@@ -1,4 +1,4 @@
-The program [vector.cpp](vector.cpp) initialize two arrays `array1` and
+The program [vector.cpp](vector.cpp) initializes two arrays `array1` and
 `array2` of variable sizes s1 and s2, and a third array with a size equal to
 max(s1, s2). The program then initializes `array1` and `array2` with increasing
 numbers from from 0 to the size of the corresponding array. Finally, it adds up
