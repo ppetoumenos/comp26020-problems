@@ -1,23 +1,17 @@
-The program [ftemplates.cpp](ftemplates.cpp) is the solution for the
-overloading exercise from last week. It implements the `+` operation for
-`Complex` numbers, it defines `<<` for output streams and `Complex`, and it
-defines three overloaded versions of `add_and_print`: one for `Complex`, one
-for `int`, one for `double`. The main function then calls the three different
-versions of `add_and_print`.
+The program [algorithms.cpp](algorithms.cpp) is the solution for the rangefor
+exercise from last week. It randomly initialises one vector and then copies
+its odd numbers into another vector. 
 
-Rewrite this program to use a single templated implementation of
-`add_and_print`. Your program should:
+Rewrite this program to implement the same functionality using std algorithms.
+Your program should:
 
-- Define `add_and_print` only once
-- Declare `add_and_print` to be a template
-
+- Have no loops
+- As a stretch target, can you use only a single vector? Going even further, can you avoid using resize()? To achieve the last bit you will need a special output iterator that appends elements to a vector when written.
 
 An example of expected output is:
 ```shell
-./ftemplates     
-(4+5i) + (9+11i) = (13+16i)
-4 + 9 = 13
-5.800000 + 11.200000 = 17.000000
+./algorithms
+16258
 ```
 
 Check the correctness of your program with this command:

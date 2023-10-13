@@ -5,19 +5,20 @@
 
 #define SIZE (32 * 1024)
 
-void init_vector(std::vector<int>& v)
-{
+void init_vector(std::vector<int>& v) {
   v.resize(SIZE);
-  for (auto& item: v)
-    item = rand() & 0xf;
+  for (int i = 0; i < v.size(); ++i)
+    v[i] = rand() & 0xf;
 }
 
 
 void copy_odds(std::vector<int>& a, std::vector<int>& b)
 {
-  for (auto& item: a) 
-    if (item % 2 == 1) 
-      b.push_back(item);
+  for (int i = 0; i < a.size(); ++i) {
+    if (a[i] % 2 == 1) {
+      b.push_back(a[i]);
+    }
+  }
 }
 
 int main(int argc, char **argv)

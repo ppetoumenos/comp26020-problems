@@ -4,23 +4,22 @@ import re
 
 @check50.check()
 def exists():
-    check50.exists("algorithms.cpp")
-    with open("algorithms.cpp") as f:
+    check50.exists("rangefor.cpp")
+    with open("rangefor.cpp") as f:
         sources_buf = f.read()
     return sources_buf
 
 @check50.check(exists)
 def compiles():
-    check50.c.compile("algorithms.cpp", exe_name="algorithms", cc="g++")
+    check50.c.compile("rangefor.cpp", exe_name="rangefor", cc="g++", ggdb=True, lm=True, std='c++17')
 
 @check50.check(exists)
 def validate(sources_buf):
-    if re.search(r'for\s*(', sources_buf):
-        raise check50.Failure('There should be no for loop in the code')
+    pass
 
 @check50.check(compiles)
 def output_correct():
-    check50.run("./algorithm")\
+    check50.run("./rangefor")\
             .stdout("16258")\
             .exit()
 
