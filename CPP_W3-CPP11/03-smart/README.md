@@ -14,7 +14,7 @@ automatically?
 4468
 ```
 
-Check the correctness of your program with this command:
+Check the correctness of your program (but not whether you have used smart pointers properly) with this command:
 ```shell
 check50 -l --ansi-log ppetoumenos/comp26020-problems/2023-2024/CPP_W3-CPP11/03-smart
 ```
