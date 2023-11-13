@@ -17,10 +17,10 @@ def compiles():
 def validate(sources_buf):
     if not re.search("class\s+Vehicle", sources_buf):
         raise check50.Failure("Could not find class Vehicle")
-    if not re.search("class\s+Car\s+:\s+public\s+Vehicle", sources_buf):
+    if not re.search("class\s+Car\s*:\s+public\s+Vehicle", sources_buf):
         raise check50.Failure("Could not find class Car or class Car does not "\
                 "inheritate from a parent")
-    if not re.search("class\s+Motorbike\s+:\s+public\s+Vehicle", sources_buf):
+    if not re.search("class\s+Motorbike\s*:\s+public\s+Vehicle", sources_buf):
         raise check50.Failure("Could not find class Motorbike or class "\
                 "Motorbike does not inheritate from a parent")
 
