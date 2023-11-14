@@ -9,9 +9,9 @@ def exists():
         sources_buf = f.read()
     return sources_buf
 
-@check50.check(exists)
+@check50.check(exists, timeout=60)
 def compiles():
-    check50.c.compile("constexpr.cpp", exe_name="constexpr", cc="g++ -O2", ggdb=True, lm=True, std='c++17')
+    check50.c.compile("constexpr.cpp", exe_name="constexpr", cc="g++", ggdb=True, lm=True, std='c++17', O2=True)
 
 @check50.check(exists)
 def validate(sources_buf):
