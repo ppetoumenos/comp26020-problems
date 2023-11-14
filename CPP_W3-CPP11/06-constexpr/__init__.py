@@ -19,8 +19,8 @@ def validate(sources_buf):
 
 @check50.check(compiles)
 def output_correct():
-    proc = check50.run("./constexpr")
-    print(proc.stdout())
-    proc.stdout("Array size is: 16378. Program run for \d+ microseconds")
-    proc.exit()
+    output = check50.run("./constexpr").stdout()
+    print(output)
+    if not re.match("Array size is: 16378. Program run for \d+ microseconds", output):
+        raise check50.Mismatch("Array size is: 16378. Program run for \d+ microseconds", output)
 
