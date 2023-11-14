@@ -19,7 +19,8 @@ def validate(sources_buf):
 
 @check50.check(compiles)
 def output_correct():
-    proc = check50.run("./constexpr").exit()
+    proc = check50.run("./constexpr")
+    proc.exit()
     print(proc.stdout())
     proc.stdout("Array size is: 16378. Program run for \d+ microseconds")
 
