@@ -33,7 +33,7 @@ int main(int argc, char **argv) {
 
     add_and_print(c1, c2); // should print "(4+5i) + (9+11i) = (13+16i)"
     add_and_print(i1, i2); // should print "4 + 9 = 13"
-    add_and_print(d1, d2); // should print "5.800000 + 11.200000 = 17.000000"
+    add_and_print(d1, d2); // should print "5.8 + 11.2 = 17"
 
     return 0;
 }
