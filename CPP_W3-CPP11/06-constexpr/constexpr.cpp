@@ -46,7 +46,7 @@ int main(int argc, char **argv)
   auto elapsed =
     std::chrono::duration_cast<std::chrono::microseconds>(end - start);
 
-  std::cout << "Array size is: " << array_sz << ". Program run for " << elapsed.count() << " microseconds\n";
+  std::cout << "Array size is: " << array_sz << ". Program ran for " << elapsed.count() << " microseconds\n";
 
   return 0;
 }

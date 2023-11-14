@@ -14,10 +14,21 @@ rewrite the program to calculate the result at compile time.
 You could use godbolt to check the kind of assembly produced by the program
 and see how much of the program has been pre-computed at compile-time.
 
+Compilation time might increase significantly, in which case check50 will
+return a timeout error. I have not figured out how to convince check50 to
+wait a bit longer, so if this happens, compile and run your program manually
+with the following two commands:
+
+```shell
+g++ constexpr.cpp -o constexpr -std=c++17 -ggdb -lm -O2
+./constexpr
+```
+
+
 An example of expected output is:
 ```shell
 ./constexpr
-Array size is: 16378. Program run for 360 microseconds
+Array size is: 16378. Program ran for 360 microseconds
 ```
 
 # Extension
