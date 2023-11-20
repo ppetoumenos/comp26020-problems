@@ -17,7 +17,7 @@ def compiles():
 def validate(sources_buf):
     if sources_buf.count("void add_and_print") != 1:
         raise check50.Failure("There should be only one definition of add_and_print")
-    if re.search("template\s+\<typename\ \S+>\s+void add_and_print", sources_buf):
+    if re.search("template\s*\<typename\ \S+>\s+void add_and_print", sources_buf):
         raise check50.Failure("Explicit template found!")
 
 @check50.check(compiles)
