@@ -64,5 +64,5 @@ Pair x: 10, y: 20
 
 Check the correctness of your program with this command:
 ```shell
-check50 -l --ansi-log ppetoumenos/comp26020-problems/2023-2024/CPP_W1-Classes/03-destructor
+check50 -l --ansi-log ppetoumenos/comp26020-problems/2024-2025/CPP_W1-Classes/03-destructor
 ```
