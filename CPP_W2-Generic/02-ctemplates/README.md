@@ -5,7 +5,7 @@ imaginary parts is convenient and fast, but limiting. In the main function
 provided, using int for c3 and c4 leads to loss of precision. Adding the two
 numbers together produces the wrong result.
 
-Rewrite this program to use make `Complex` templated on the type of the real
+Rewrite this program to make `Complex` templated on the type of the real
 and imaginary parts. The main function then should create different
 instantiations for the c1/2 and c3/4. 
 
