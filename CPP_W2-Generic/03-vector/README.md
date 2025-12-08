@@ -7,7 +7,7 @@ before printing the content of the result array.
 
 ![](picture.svg)
 
-Rewrite this program to use `vector`s rather than C-style arrays for `array1`,
+Rewrite this program to use `std::vector`s rather than C-style arrays for `array1`,
 `array2` and `result_array`. Your program should:
 
 - Have no calls to `malloc`/`free`
@@ -23,5 +23,5 @@ An example of expected output is:
 
 Check the correctness of your program with this command:
 ```shell
-check50 -l --ansi-log ppetoumenos/comp26020-problems/2024-2025/CPP_W2-Generic/03-vector
+check50 -l --ansi-log ppetoumenos/comp26020-problems/main/CPP_W2-Generic/03-vector
 ```

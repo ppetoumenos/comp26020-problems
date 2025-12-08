@@ -41,7 +41,7 @@ It's hard to check that you have implemented the right solution using the
 check50 framework, but you should be able to, at least, check the correctness
 of your program with this command:
 ```shell
-check50 -l --ansi-log ppetoumenos/comp26020-problems/2024-2025/CPP_W3-CPP11/05-retval
+check50 -l --ansi-log ppetoumenos/comp26020-problems/main/CPP_W3-CPP11/05-retval
 ```
 
 clock\_gettime() info: [https://man7.org/linux/man-pages/man2/clock\_gettime.2.html](https://man7.org/linux/man-pages/man2/clock_gettime.2.html)

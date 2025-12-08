@@ -60,5 +60,5 @@ array[9] has 4 wheels
 
 Check the correctness of your program with this command:
 ```shell
-check50 -l --ansi-log ppetoumenos/comp26020-problems/2024-2025/CPP_W1-Classes/06-overriding
+check50 -l --ansi-log ppetoumenos/comp26020-problems/main/CPP_W1-Classes/06-overriding
 ```

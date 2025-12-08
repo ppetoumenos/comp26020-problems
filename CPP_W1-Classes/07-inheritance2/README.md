@@ -9,5 +9,5 @@ base_method called, x: 3, y: 4
 
 Check the correctness of your program with this command:
 ```shell
-check50 -l --ansi-log ppetoumenos/comp26020-problems/2024-2025/CPP_W1-Classes/07-inheritance2
+check50 -l --ansi-log ppetoumenos/comp26020-problems/main/CPP_W1-Classes/07-inheritance2
 ```

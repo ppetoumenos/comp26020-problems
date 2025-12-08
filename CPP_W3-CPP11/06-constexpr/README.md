@@ -41,5 +41,5 @@ and/or vectors?
 
 Check the correctness of your program with this command:
 ```shell
-check50 -l --ansi-log ppetoumenos/comp26020-problems/2024-2025/CPP_W3-CPP11/06-constexpr
+check50 -l --ansi-log ppetoumenos/comp26020-problems/main/CPP_W3-CPP11/06-constexpr
 ```

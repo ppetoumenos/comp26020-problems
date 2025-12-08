@@ -16,7 +16,7 @@ int main(int argc, char **argv) {
     p.x = 10;
     p.y = 20;
 
-	std::cout << "p.x is " << p.x << ", p.y is " << p.y << "\n";
+    std::cout << "p.x is " << p.x << ", p.y is " << p.y << "\n";
 
     return 0;
 }
@@ -33,5 +33,5 @@ p.x is 10, p.y is 20
 
 Check the correctness of your program with this command:
 ```shell
-check50 -l --ansi-log ppetoumenos/comp26020-problems/2024-2025/CPP_W1-Classes/01-constructor
+check50 -l --ansi-log ppetoumenos/comp26020-problems/main/CPP_W1-Classes/01-constructor
 ```
