@@ -15,8 +15,6 @@ The eleventh element should be 24 and it's 24
 The vector should have 30011 elements now and it has 30011
 The last element should be 29999 and it's 29999
 
-The vector of vectors has three vectors with sizes 1, 5, and 10
-
 ```
 
 As an **extension** can you make:
