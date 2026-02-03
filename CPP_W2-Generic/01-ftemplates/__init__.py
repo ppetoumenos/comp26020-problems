@@ -24,6 +24,6 @@ def validate(sources_buf):
 def output_correct():
     check50.run("./ftemplates")\
         .stdout("(4+5i) + (9+11i) = (13+16i)", regex=False)\
-        .stdout("4 \+ 9 = 13")\
-        .stdout("5.8 \+ 11.2 = 17")\
+        .stdout("4 + 9 = 13")\
+        .stdout("5.8 + 11.2 = 17")\
         .exit()

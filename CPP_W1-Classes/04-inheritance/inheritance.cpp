@@ -11,10 +11,10 @@ int main(int argc, char **argv) {
     std::cout << "v's mileage is: " << v.get_mileage() << "\n";
     
     std::cout << "c1's mileage is: " << c1.get_mileage();
-    std::cout << ", steering wheels: " << c1.get_steering_wheels << "\n";
+    std::cout << ", steering wheels: " << c1.get_steering_wheels() << "\n";
 
     std::cout << "c2's mileage is: " << c2.get_mileage();
-    std::cout << ", steering wheels: " << c2.get_steering_wheels << "\n";
+    std::cout << ", steering wheels: " << c2.get_steering_wheels() << "\n";
     
     std::cout << "m's mileage is:  " << m.get_mileage();
     std::cout << ", cc class: " << m.get_cc_class() << "\n";

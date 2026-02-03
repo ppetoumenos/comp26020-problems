@@ -20,15 +20,15 @@ def validate(sources_buf):
 @check50.check(compiles)
 def output_correct():
     check50.run("./overriding")\
-        .stdout("array\[0\] has [24]+ wheels")\
-        .stdout("array\[1\] has [24]+ wheels")\
-        .stdout("array\[2\] has [24]+ wheels")\
-        .stdout("array\[3\] has [24]+ wheels")\
-        .stdout("array\[4\] has [24]+ wheels")\
-        .stdout("array\[5\] has [24]+ wheels")\
-        .stdout("array\[6\] has [24]+ wheels")\
-        .stdout("array\[7\] has [24]+ wheels")\
-        .stdout("array\[8\] has [24]+ wheels")\
-        .stdout("array\[9\] has [24]+ wheels")\
+        .stdout(r"array\[0\] has [24]+ wheels")\
+        .stdout(r"array\[1\] has [24]+ wheels")\
+        .stdout(r"array\[2\] has [24]+ wheels")\
+        .stdout(r"array\[3\] has [24]+ wheels")\
+        .stdout(r"array\[4\] has [24]+ wheels")\
+        .stdout(r"array\[5\] has [24]+ wheels")\
+        .stdout(r"array\[6\] has [24]+ wheels")\
+        .stdout(r"array\[7\] has [24]+ wheels")\
+        .stdout(r"array\[8\] has [24]+ wheels")\
+        .stdout(r"array\[9\] has [24]+ wheels")\
         .exit()
 

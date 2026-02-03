@@ -16,7 +16,7 @@ def compiles():
 @check50.check(compiles)
 def output_correct():
     check50.run('./encoder "hello world"')\
-            .stdout("hello	11203").
-            .stdout("world	18215").
+            .stdout("hello	11203")\
+            .stdout("world	18215")\
             .exit()
 

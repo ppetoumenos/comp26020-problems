@@ -41,7 +41,7 @@ int main(int argc, char **argv) {
 ```
 
 Implement the operator overrides for addition and printing complex numbers into std::cout.
-Hint1: Get inspiration from the prototypes for the std::ostream operator<< in Lecture 29.
+Hint1: Get inspiration from the prototypes for the std::ostream operator<< in Lecture 5.
 Hint2: Pass everything by value. It does not affect performance and avoids
 syntactic errors caused by C++ features we will not discuss for another two weeks.
 The expected output is:
