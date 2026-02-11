@@ -56,7 +56,7 @@ int main(int argc, char** argv) {
   int res{0};
   {
     std::vector<Base *> v = generate_vector();
-    res = std::accumulate(v.begin(), v.end(), 0, [] (int& acc, Base* obj) {return acc + obj->get_sum();});
+    res = std::accumulate(v.begin(), v.end(), 0, [] (int acc, Base* obj) {return acc + obj->get_sum();});
   }
   std::cout << res << "\n";
 }

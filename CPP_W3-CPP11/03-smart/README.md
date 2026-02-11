@@ -11,7 +11,7 @@ automatically?
 
 ```shell
 ./smart
-4468
+9181
 ```
 
 Check the correctness of your program (but not whether you have used smart pointers properly) with this command:

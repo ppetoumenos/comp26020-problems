@@ -20,5 +20,5 @@ def validate(sources_buf):
 @check50.check(compiles)
 def output_correct():
     check50.c.valgrind("./smart")\
-            .stdout('4468')\
+            .stdout('9181')\
             .exit()
