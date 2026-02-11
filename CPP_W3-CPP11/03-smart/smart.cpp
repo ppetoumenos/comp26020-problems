@@ -8,7 +8,7 @@ class Base {
   public:
     Base(int num) : num{num} {};
 
-    int get_sum() {
+    virtual int get_sum() {
       return num;
     }
   private:
@@ -19,7 +19,7 @@ class Derived1 : public Base {
   public:
     Derived1(int num, int num1) : Base(num), num1{num1} {};
 
-    int get_sum() {
+    virtual int get_sum() override {
       return Base::get_sum() + num1;
     }
   private:
@@ -30,7 +30,7 @@ class Derived2 : public Derived1 {
   public:
     Derived2(int num, int num1, int num2) : Derived1(num, num1), num2{num2} {};
 
-    int get_sum() {
+    int get_sum() override {
       return Derived1::get_sum() + num2;
     }
   private:
