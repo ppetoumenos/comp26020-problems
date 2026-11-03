@@ -20,7 +20,7 @@ wait a bit longer, so if this happens, compile and run your program manually
 with the following two commands:
 
 ```shell
-g++ constexpr.cpp -o constexpr -std=c++17 -ggdb -lm -O2
+g++ constexpr.cpp -o constexpr -std=c++20 -ggdb -lm -O2
 ./constexpr
 ```
 
@@ -30,14 +30,6 @@ An example of expected output is:
 ./constexpr
 Array size is: 16378. Program ran for 360 microseconds
 ```
-
-# Extension
-This exercise uses arrays and regular loops, instead of the vectors used in the
-rangefor exercise and the std algorithms of the 01-algorithms exercise because
-constexpr in C++ 17 does not work well with algorithms and vectors. If your
-compiler supports C++ 20, can you produce the same result using algorithms
-and/or vectors?
-
 
 Check the correctness of your program with this command:
 ```shell

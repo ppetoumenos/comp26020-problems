@@ -18,7 +18,7 @@ is used in main() to avoid passing output values as arguments?
 Do not attempt to change or understand any other function beyond
 my\_clock\_gettime() and main().
 
-As a follow up, main() is using an index-based for loop to iterate over two 
+As a follow up, main() is using an index-based for-loop to iterate over two 
 arrays concurrently, the clocks and the clock\_names arrays. Index-based loops
 are dangerous, so can you change that loop into a range-for one that iterates
 over a single array? One way to achieve this would be to change how the clocks
@@ -29,7 +29,7 @@ it should look something like the following:
 ```shell
 ./retval
 CLOCK_MONOTONIC: 1970-01-01T04:07:07.110110634
-CLOCK_REALTIME: 2023-11-07T12:59:23.367741561
+CLOCK_REALTIME: 2025-11-07T12:59:23.367741561
 CLOCK_TAI: ERROR!
 ```
 
